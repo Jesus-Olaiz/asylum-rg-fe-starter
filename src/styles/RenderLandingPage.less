@@ -8,6 +8,9 @@
 @tablet-large: ~"(min-width: 769px) and (max-width: 1024px)";
 @laptop: ~"(min-width: 1025px) and (max-width: 1280px)";
 
+
+
+
 .header {
     background-color: @main-color;
     display:flex;
@@ -41,13 +44,59 @@
     font-size: 1.2rem;
 }
 
-// .graphs-section {
-//  ADD THIS BACK IN WHEN YOU HAVE THE GRAPHS SECTION
-// }
+.main{
+    text-align: center;
+}
+
+.graphs-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-items: center;
+
+
+    margin-bottom: 5rem;
+}
+
+
+
+.graphs-section div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    width: 70%;
+    height: 100%;
+
+    margin:0 auto;
+
+    
+}
+.graphs-section div img{
+    max-width: 100%;
+}
+.gr-nationality-img{
+
+    width: 65%;
+
+    
+}
+
+
+
+
 
 .view-more-data-btn-container {
+    display: flex;
+    gap: 2rem;
+
+    justify-content: center;
+    align-items:center;
+
     height: 44px;
-    width: 180px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 10%;
@@ -75,9 +124,69 @@
     font-size: 1.4rem;
 }
 
-// .bottom-section {
-//      ADD THIS BACK IN WHEN YOU HAVE A BOTTOM SECTION
-// }
+.bottom-section {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    text-align: center;
+
+    margin: 10rem auto 5rem;
+}
+
+.readMoreButton {
+    border: none;
+    border-style: none;
+
+    margin: 0 auto;
+    padding: .25rem 1rem;
+}
+
+.bottom-section h1 {
+    font-size: 3rem;
+    font-family: 'moneta';
+    margin-bottom: 10rem;
+}
+
+.data-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    margin: 0 auto;
+
+    font-family:'acumin';
+}
+
+.data-point-container{
+    max-width: 80%;
+
+    margin: 0 auto;
+}
+
+
+.data-point{
+    font-family: 'AcuminProMedium';
+    font-size: 3rem;
+}
+
+.data-description{
+    font-size: .9rem;
+    font-family:'AcuminProMedium'
+}
+
+.first-data-point-container {
+    
+}
+
+.second-data-point-container {
+    
+}
+
+.third-data-point-container {
+    
+}
+
 
 .back-to-top {
     width: 8%;
@@ -205,6 +314,10 @@
 
     .back-to-top {
         width: 35%;
+    }
+
+    .page-button:hover, .page-button:focus {
+        cursor:pointer;
     }
 
 
