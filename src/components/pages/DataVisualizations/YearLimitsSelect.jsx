@@ -64,7 +64,13 @@ function YearLimitsSelect(props) {
   //     ));
   // };
   const stateSettingFn = (view, office, data) => {
-    const plotlyReadyData = rawApiDataToPlotlyReadyInfo(view, office, data);
+    const plotlyReadyData = rawApiDataToPlotlyReadyInfo(
+      view,
+      office,
+      data,
+      years
+    );
+
     dispatch(setVisualizationData(view, office, plotlyReadyData));
   };
   const [form] = Form.useForm();

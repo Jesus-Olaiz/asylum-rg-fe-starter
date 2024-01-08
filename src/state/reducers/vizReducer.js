@@ -115,7 +115,7 @@ const vizReducer = (state = initialState, action) => {
           case 'office-heat-map':
             return {
               ...state,
-              officeHeatMapData: {},
+              officeHeatMapData: action.payload.data,
               officeHeatMapYears: [2015, currentYear],
             };
           case 'citizenship':
@@ -157,6 +157,7 @@ const vizReducer = (state = initialState, action) => {
             return state;
         }
       }
+
     case SET_VISUALIZATION_DATA:
       if (!action.payload.office) {
         switch (action.payload.view) {
@@ -198,6 +199,7 @@ const vizReducer = (state = initialState, action) => {
           },
         };
       }
+
     case SET_HEAT_MAP_YEARS:
       if (!action.payload.office) {
         switch (action.payload.view) {
