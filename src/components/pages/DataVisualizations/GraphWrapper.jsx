@@ -29,8 +29,10 @@ function GraphWrapper(props) {
     view = 'time-series';
   }
   let map_to_render;
+
   let baseURLFiscal = `https://hrf-asylum-be-b.herokuapp.com/cases/fiscalSummary`;
   let baseURLMap = `https://hrf-asylum-be-b.herokuapp.com/cases/citizenshipSummary`;
+
   if (!office) {
     switch (view) {
       case 'time-series':
