@@ -1,0 +1,52 @@
+.userProfileContainer{
+    min-height: 60vh;
+
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.userAvatar{
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+
+    margin:auto;
+    padding: 1rem;
+    min-height: 100%;
+}
+.userImage {
+    border-radius: 50%;
+}
+
+
+.userInfo{
+    
+    
+    padding: 1rem;
+    margin: auto;
+}
+
+.userInfo li{
+    display: flex;
+    gap: 1.35rem;
+
+    align-items: center;
+}
+
+.label{
+    font-weight: bolder;
+    font-size: 1.25rem;
+}
+
+.label::after{
+    
+    content:"|";
+
+    font-weight:normal;
+    padding: .5rem;
+}
