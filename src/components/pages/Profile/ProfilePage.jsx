@@ -9,12 +9,6 @@ const Profile = () => {
     return <div>Loading ...</div>;
   }
 
-  console.log(user);
-
-  if (user.sub.includes('google')) {
-    user.full_name = user.name;
-  }
-
   return (
     isAuthenticated && (
       <div className="userProfileContainer">
